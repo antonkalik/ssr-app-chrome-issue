@@ -1,0 +1,50 @@
+{
+  "name": "ssr-app-chrome-issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/server_bundle.js",
+  "scripts": {
+    "dev:build-server": "webpack --config ./webpack.server.js",
+    "dev:build-client": "webpack --config ./webpack.client.js",
+    "build-dev": "npm run dev:build-server && npm run dev:build-client",
+    "dev:server": "node dist/server_bundle.js",
+    "dev": "npm run build-dev && npm run dev:server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonkalik/ssr-app-chrome-issue.git"
+  },
+  "keywords": [],
+  "author": "Anton Kalik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antonkalik/ssr-app-chrome-issue/issues"
+  },
+  "homepage": "https://github.com/antonkalik/ssr-app-chrome-issue#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/eslint-parser": "^7.12.1",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "babel-loader": "^8.2.1",
+    "eslint": "^7.13.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.5",
+    "nodemon": "^2.0.6",
+    "prettier": "^2.1.2",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-node-externals": "^2.5.2"
+  }
+}
